@@ -1,0 +1,2 @@
+step	aorta_outlet	inflow	lca_br1	lca_br2	lca_br3	lca_br4	lca_br5	lca_br6	rca_br1	rca_br2	rca_br3	
+00010	0.000657	-617.319989	-0.003701	-0.008009	-0.000730	-0.001628	-3.600680	-0.005247	-0.005517	-0.004311	-0.000034	

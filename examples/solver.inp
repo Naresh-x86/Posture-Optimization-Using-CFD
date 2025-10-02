@@ -1,0 +1,42 @@
+Density: 1.06
+Viscosity: 0.04
+
+Number of Timesteps: 10
+Time Step Size: 0.005
+
+Number of Timesteps between Restarts: 10
+Number of Force Surfaces: 1
+Surface ID's for Force Calculation: 1
+Force Calculation Method: Velocity Based
+Print Average Solution: True
+Print Error Indicators: False
+
+Time Varying Boundary Conditions From File: True
+
+Step Construction: 0 1 0 1
+
+Number of Resistance Surfaces: 9
+List of Resistance Surfaces: 2 3 5 6 7 8 9 10 11
+Resistance Values: 50666 152000 20266 76000 50666 20266 76000 50666 152000
+
+Pressure Coupling: Implicit
+Number of Coupled Surfaces: 9
+
+Backflow Stabilization Coefficient: 0.2
+Residual Control: True
+Residual Criteria: 0.01
+Minimum Required Iterations: 3
+svLS Type: NS
+Number of Krylov Vectors per GMRES Sweep: 100
+Number of Solves per Left-hand-side Formation: 1
+Tolerance on Momentum Equations: 0.1
+Tolerance on Continuity Equations: 1.0
+Tolerance on svLS NS Solver: 0.4
+Maximum Number of Iterations for svLS NS Solver: 1
+Maximum Number of Iterations for svLS Momentum Loop: 1
+Maximum Number of Iterations for svLS Continuity Loop: 10
+Time Integration Rule: Second Order
+Time Integration Rho Infinity: 0.5
+Flow Advection Form: Convective
+Quadrature Rule on Interior: 2
+Quadrature Rule on Boundary: 3
