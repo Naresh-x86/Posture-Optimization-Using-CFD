@@ -24,27 +24,19 @@ graph TD
 *   The `PostureConfig` dataclass defines the geometric constraints. Variables `neck`, `torso`, and `legs` denote rotational angles \( \theta \) in degrees.
 *   These variables are bounded by physical constraints via a `__post_init__` method (e.g., neck angle is clamped between -30° and 45°, torso between -15° and 60°).
 
-<br/>
-
 #### 2. Boundary Condition Calculation
 *   The script uses a `VesselConfig` class containing nested dictionaries `AORTA_RESISTANCE`, `ABDOMINAL_RESISTANCE`, and `CORONARY_RESISTANCE`. These dictionaries map distinct surface IDs (e.g., surface 2: `btrunk`, surface 3: `carotid`) to their baseline resistance magnitudes.
 *   The input posture angles compute a scalar multiplier matrix. This matrix modifies the baseline resistances, simulating the physiological constriction or dilation of the vascular beds caused by gravitational or biomechanical factors. 
 
-<br/>
-
 #### 3. Solver Execution
 *   The pipeline relies on the `subprocess` module to interface with the operating system shell.
 *   It initiates the MPI executable (`mpiexec.exe`) mapped to the binary `svsolver-msmpi-bin.exe`. The execution defines the number of parallel threads using the `-n 8` argument, distributing the computational matrix operations across logical cores to accelerate the Navier-Stokes equations resolution.
-
-<br/>
 
 #### 4. Post-Processing and Data Extraction
 *   Following completion, the script automatically parses the generated log files and output dat files.
 *   Using Regular Expressions (`re` module), it identifies and slices specific time steps (e.g., `ITERATION_DURATION_MIN = 30`) and extracts nodal pressure and velocity vectors.
 *   Extracted vectors are compiled into multi-dimensional NumPy arrays (`np.ndarray`) and converted into pandas DataFrames for structured indexing.
 *   The final aggregated data matrix is serialized via the `pickle` module into `run_summary.pkl` to optimize read I/O during subsequent visualization phases.
-
----
 
 ---
 
