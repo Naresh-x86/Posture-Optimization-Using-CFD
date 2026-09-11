@@ -1,2 +1,0 @@
-step	SMA	hepatic	inflow	left_external_iliac	left_internal_iliac	left_renal	right_external_iliac	right_internal_iliac	right_renal	splenic	
-00010	-0.000014	0.000004	83.300019	-0.000000	-0.000000	0.000026	-0.000000	0.000002	-0.000008	0.000000	
