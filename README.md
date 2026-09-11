@@ -14,7 +14,7 @@ graph TD
     D --> E[svsolver-msmpi-bin.exe]
     E --> F[Extract Logs via Regex]
     F -->|Compile ndarray| G(Pandas DataFrame)
-    G -->|Serialize| H[(run_summary.pkl)]
+    G -->|Serialize| H[(data/run_summary.pkl)]
     H --> I[Jupyter Notebook Matplotlib]
 ```
 
@@ -36,14 +36,14 @@ graph TD
 *   Following completion, the script automatically parses the generated log files and output dat files.
 *   Using Regular Expressions (`re` module), it identifies and slices specific time steps (e.g., `ITERATION_DURATION_MIN = 30`) and extracts nodal pressure and velocity vectors.
 *   Extracted vectors are compiled into multi-dimensional NumPy arrays (`np.ndarray`) and converted into pandas DataFrames for structured indexing.
-*   The final aggregated data matrix is serialized via the `pickle` module into `run_summary.pkl` to optimize read I/O during subsequent visualization phases.
+*   The final aggregated data matrix is serialized via the `pickle` module into `data/run_summary.pkl` to optimize read I/O during subsequent visualization phases.
 
 ---
 
 ### Setup & Run Instructions
 
 > [!CAUTION]
-> Configured paths pointing to the execution binaries (`mpiexec.exe`, `svsolver`) must be strictly set within the global variables of `run_summary_extract.py` before initiating the Jupyter kernel.
+> Configured paths pointing to the execution binaries (`mpiexec.exe`, `svsolver`) must be strictly set within the global variables of `src/run_summary_extract.py` before initiating the Jupyter kernel.
 
 1. **System Prerequisites**
    Ensure that **Microsoft MPI** (or OpenMPI) and the **SimVascular** suite are installed on your host system.
@@ -62,10 +62,10 @@ graph TD
    jupyter notebook
    ```
    
-   Open `main.ipynb` or `new.ipynb` in your browser. Configure your desired `PostureConfig` angles in the first cell and execute the notebook sequentially to trigger the `mpiexec` solver instances.
+   Open `notebooks/main.ipynb` in your browser. Configure your desired `PostureConfig` angles in the first cell and execute the notebook sequentially to trigger the `mpiexec` solver instances.
 
 ---
 
 ### Data Analysis & Jupyter Integration
 
-The repository utilizes Jupyter Notebooks (`main.ipynb`, `new.ipynb`) as the frontend controller for the pipeline. These environments allow for iterative configuration of the `PostureConfig` parameters and use `matplotlib.pyplot` to generate flow waveform graphs comparing pressure gradients across the defined surface IDs under varying geometric states.
+The repository utilizes Jupyter Notebooks (`notebooks/main.ipynb`) as the frontend controller for the pipeline. These environments allow for iterative configuration of the `PostureConfig` parameters and use `matplotlib.pyplot` to generate flow waveform graphs comparing pressure gradients across the defined surface IDs under varying geometric states.
