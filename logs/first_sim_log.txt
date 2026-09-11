@@ -1,0 +1,2918 @@
+SETUP VERIFICATION:
+  MPI executable: ✓
+  svSolver executable: ✓
+  svPost executable: ✓
+  Aorta project: ✓
+  Abdominal project: ✓
+  Coronary project: ✓
+
+============================================================
+SMART POSTURE CORRECTION OPTIMIZATION
+============================================================
+Initial posture: Neck:+10° Torso:+15° Legs:+5°
+Maximum iterations: 3
+
+=== SIMULATION ITERATION 1-baseline ===
+Posture: Neck:+10° Torso:+15° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 85.80 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.018) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.018
+  Running solver for Aorta (iteration 1-baseline)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Aorta
+        49 3.300E+01 1.184E-02  (  -7)   9.480E-03   2.748E-02  < 35419- 2|  16> [   0 -   0]
+        50 3.500E+01 5.702E-02  (   0)   4.048E-02   1.764E-03  <  8918- 2|  15> [   0 -   0]
+        50 3.700E+01 1.162E-02  (  -7)   9.203E-03   2.212E-02  < 35419- 2|  16> [   0 -   0]
+  Running post-processing for Aorta (tag 1-baseline)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter1-baseline -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Aorta
+        49 3.300E+01 1.184E-02  (  -7)   9.480E-03   2.748E-02  < 35419- 2|  16> [   0 -   0]
+        50 3.500E+01 5.702E-02  (   0)   4.048E-02   1.764E-03  <  8918- 2|  15> [   0 -   0]
+        50 3.700E+01 1.162E-02  (  -7)   9.203E-03   2.212E-02  < 35419- 2|  16> [   0 -   0]
+  Running post-processing for Aorta (tag 1-baseline)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter1-baseline -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter1-baseline
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 95.7 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.5
+    carotid: 5.7
+    outflow: 67.0
+    rt_carotid: 5.7
+    subclavian: 5.7
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.00 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.025) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.025
+  Running solver for Abdominal (iteration 1-baseline)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter1-baseline
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 95.7 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.5
+    carotid: 5.7
+    outflow: 67.0
+    rt_carotid: 5.7
+    subclavian: 5.7
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.00 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.025) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.025
+  Running solver for Abdominal (iteration 1-baseline)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Abdominal
+        49 4.900E+01 7.403E-02  (   0)   2.255E-01   1.511E-02  <   969- 2|  18> [   0 -   0]
+        50 5.200E+01 7.847E-02  (   0)   2.970E-01   7.920E-02  <   969- 2|  18> [   0 -   0]
+        50 5.400E+01 7.278E-02  (   0)   2.705E-01   1.045E-02  <   969- 2|  18> [   0 -   0]
+  Running post-processing for Abdominal (tag 1-baseline)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter1-baseline -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Abdominal
+        49 4.900E+01 7.403E-02  (   0)   2.255E-01   1.511E-02  <   969- 2|  18> [   0 -   0]
+        50 5.200E+01 7.847E-02  (   0)   2.970E-01   7.920E-02  <   969- 2|  18> [   0 -   0]
+        50 5.400E+01 7.278E-02  (   0)   2.705E-01   1.045E-02  <   969- 2|  18> [   0 -   0]
+  Running post-processing for Abdominal (tag 1-baseline)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter1-baseline -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter1-baseline
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 72.6 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.2
+    left_internal_iliac: 4.8
+    left_renal: 7.3
+    right_external_iliac: 18.2
+    right_internal_iliac: 4.8
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.71 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Coronary (iteration 1-baseline)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter1-baseline
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 72.6 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.2
+    left_internal_iliac: 4.8
+    left_renal: 7.3
+    right_external_iliac: 18.2
+    right_internal_iliac: 4.8
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.71 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Coronary (iteration 1-baseline)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Coronary
+        39 7.200E+01 1.249E-02  (   0)   2.992E-02   8.676E-03  < 69438- 1|  17> [   0 -   0]
+        40 7.600E+01 1.174E-02  (   0)   7.031E-02   1.936E-03  < 97128- 1|  12> [   0 -   0]
+        40 8.000E+01 2.542E-03  (  -7)   1.413E-02   2.728E-02  < 69438- 1|  14> [   0 -   0]
+  Running post-processing for Coronary (tag 1-baseline)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter1-baseline -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Coronary
+        39 7.200E+01 1.249E-02  (   0)   2.992E-02   8.676E-03  < 69438- 1|  17> [   0 -   0]
+        40 7.600E+01 1.174E-02  (   0)   7.031E-02   1.936E-03  < 97128- 1|  12> [   0 -   0]
+        40 8.000E+01 2.542E-03  (  -7)   1.413E-02   2.728E-02  < 69438- 1|  14> [   0 -   0]
+  Running post-processing for Coronary (tag 1-baseline)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter1-baseline -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter1-baseline
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.7 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.5
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 1-baseline RESULTS ---
+Aorta: 85.8 -> 95.7 mL/s
+Abdominal: 67.0 -> 72.6 mL/s
+Coronary: 28.7 -> 29.7 mL/s
+Overall Efficiency: 0.948
+
+--- Exploring posture adjustments (iteration 2) ---
+
+=== SIMULATION ITERATION 2-neck+5 ===
+Posture: Neck:+15° Torso:+15° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 85.59 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.022) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.022
+  Running solver for Aorta (iteration 2-neck+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter1-baseline
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.7 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.5
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 1-baseline RESULTS ---
+Aorta: 85.8 -> 95.7 mL/s
+Abdominal: 67.0 -> 72.6 mL/s
+Coronary: 28.7 -> 29.7 mL/s
+Overall Efficiency: 0.948
+
+--- Exploring posture adjustments (iteration 2) ---
+
+=== SIMULATION ITERATION 2-neck+5 ===
+Posture: Neck:+15° Torso:+15° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 85.59 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.022) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.022
+  Running solver for Aorta (iteration 2-neck+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Aorta
+        59 3.900E+01 1.074E-02  (  -7)   6.581E-03   1.370E-02  < 19753- 4|  16> [   0 -   0]
+        60 4.100E+01 5.675E-02  (   0)   3.146E-02   1.346E-03  < 64564- 1|  15> [   0 -   0]
+        60 4.300E+01 1.071E-02  (  -7)   7.403E-03   2.059E-02  < 19753- 4|  16> [   0 -   0]
+  Running post-processing for Aorta (tag 2-neck+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter2-neck+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Aorta
+        59 3.900E+01 1.074E-02  (  -7)   6.581E-03   1.370E-02  < 19753- 4|  16> [   0 -   0]
+        60 4.100E+01 5.675E-02  (   0)   3.146E-02   1.346E-03  < 64564- 1|  15> [   0 -   0]
+        60 4.300E+01 1.071E-02  (  -7)   7.403E-03   2.059E-02  < 19753- 4|  16> [   0 -   0]
+  Running post-processing for Aorta (tag 2-neck+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter2-neck+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter2-neck+5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 95.5 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.5
+    carotid: 5.7
+    outflow: 66.8
+    rt_carotid: 5.7
+    subclavian: 5.7
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 66.83 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.025) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.025
+  Running solver for Abdominal (iteration 2-neck+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter2-neck+5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 95.5 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.5
+    carotid: 5.7
+    outflow: 66.8
+    rt_carotid: 5.7
+    subclavian: 5.7
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 66.83 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.025) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.025
+  Running solver for Abdominal (iteration 2-neck+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Abdominal
+        59 5.500E+01 1.473E-02  (  -7)   6.469E-02   6.665E-02  < 18440- 2|  18> [   0 -   0]
+        60 5.700E+01 8.368E-02  (   0)   1.087E-01   9.905E-03  <   969- 2|  18> [   0 -   0]
+        60 6.000E+01 1.143E-02  (  -8)   8.211E-02   4.069E-02  < 18440- 2|  19> [   0 -   0]
+  Running post-processing for Abdominal (tag 2-neck+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter2-neck+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Abdominal
+        59 5.500E+01 1.473E-02  (  -7)   6.469E-02   6.665E-02  < 18440- 2|  18> [   0 -   0]
+        60 5.700E+01 8.368E-02  (   0)   1.087E-01   9.905E-03  <   969- 2|  18> [   0 -   0]
+        60 6.000E+01 1.143E-02  (  -8)   8.211E-02   4.069E-02  < 18440- 2|  19> [   0 -   0]
+  Running post-processing for Abdominal (tag 2-neck+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter2-neck+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter2-neck+5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 72.4 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.2
+    hepatic: 2.4
+    left_external_iliac: 18.1
+    left_internal_iliac: 4.8
+    left_renal: 7.2
+    right_external_iliac: 18.1
+    right_internal_iliac: 4.8
+    right_renal: 7.2
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.64 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Coronary (iteration 2-neck+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter2-neck+5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 72.4 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.2
+    hepatic: 2.4
+    left_external_iliac: 18.1
+    left_internal_iliac: 4.8
+    left_renal: 7.2
+    right_external_iliac: 18.1
+    right_internal_iliac: 4.8
+    right_renal: 7.2
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.64 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Coronary (iteration 2-neck+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Coronary
+        49 7.200E+01 9.069E-03  (   0)   8.352E-02   5.704E-03  < 69438- 1|  14> [   0 -   0]
+        50 7.600E+01 1.142E-02  (   0)   1.269E-01   1.788E-02  < 51066- 3|  14> [   0 -   0]
+        50 8.100E+01 6.702E-03  (  -2)   8.841E-02   8.101E-03  < 24851- 3|  14> [   0 -   0]
+  Running post-processing for Coronary (tag 2-neck+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter2-neck+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Coronary
+        49 7.200E+01 9.069E-03  (   0)   8.352E-02   5.704E-03  < 69438- 1|  14> [   0 -   0]
+        50 7.600E+01 1.142E-02  (   0)   1.269E-01   1.788E-02  < 51066- 3|  14> [   0 -   0]
+        50 8.100E+01 6.702E-03  (  -2)   8.841E-02   8.101E-03  < 24851- 3|  14> [   0 -   0]
+  Running post-processing for Coronary (tag 2-neck+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter2-neck+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter2-neck+5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.6 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.4
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 2-neck+5 RESULTS ---
+Aorta: 85.6 -> 95.5 mL/s
+Abdominal: 66.8 -> 72.4 mL/s
+Coronary: 28.6 -> 29.6 mL/s
+Overall Efficiency: 0.946
+
+=== SIMULATION ITERATION 2-neck-5 ===
+Posture: Neck:+5° Torso:+15° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 86.01 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.012) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.012
+  Running solver for Aorta (iteration 2-neck-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter2-neck+5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.6 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.4
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 2-neck+5 RESULTS ---
+Aorta: 85.6 -> 95.5 mL/s
+Abdominal: 66.8 -> 72.4 mL/s
+Coronary: 28.6 -> 29.6 mL/s
+Overall Efficiency: 0.946
+
+=== SIMULATION ITERATION 2-neck-5 ===
+Posture: Neck:+5° Torso:+15° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 86.01 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.012) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.012
+  Running solver for Aorta (iteration 2-neck-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Aorta
+        69 4.000E+01 1.019E-02  (  -7)   5.830E-03   1.773E-02  <    71- 1|  16> [   0 -   0]
+        70 4.200E+01 5.674E-02  (   0)   2.615E-02   1.091E-03  < 64247- 1|  16> [   0 -   0]
+        70 4.400E+01 1.009E-02  (  -7)   4.924E-03   1.475E-02  <    71- 1|  16> [   0 -   0]
+  Running post-processing for Aorta (tag 2-neck-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter2-neck-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Aorta
+        69 4.000E+01 1.019E-02  (  -7)   5.830E-03   1.773E-02  <    71- 1|  16> [   0 -   0]
+        70 4.200E+01 5.674E-02  (   0)   2.615E-02   1.091E-03  < 64247- 1|  16> [   0 -   0]
+        70 4.400E+01 1.009E-02  (  -7)   4.924E-03   1.475E-02  <    71- 1|  16> [   0 -   0]
+  Running post-processing for Aorta (tag 2-neck-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter2-neck-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter2-neck-5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 95.9 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.5
+    carotid: 5.8
+    outflow: 67.2
+    rt_carotid: 5.8
+    subclavian: 5.8
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.16 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.025) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.025
+  Running solver for Abdominal (iteration 2-neck-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter2-neck-5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 95.9 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.5
+    carotid: 5.8
+    outflow: 67.2
+    rt_carotid: 5.8
+    subclavian: 5.8
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.16 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.025) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.025
+  Running solver for Abdominal (iteration 2-neck-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Abdominal
+        69 5.100E+01 4.943E-02  (  -2)   1.561E-01   1.012E-02  < 18440- 2|  18> [   0 -   0]
+        70 5.400E+01 9.509E-02  (   0)   6.232E-01   2.624E-01  < 18440- 2|  18> [   0 -   0]
+        70 5.700E+01 7.454E-02  (   0)   4.538E-01   1.383E-01  < 18440- 2|  18> [   0 -   0]
+  Running post-processing for Abdominal (tag 2-neck-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter2-neck-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Abdominal
+        69 5.100E+01 4.943E-02  (  -2)   1.561E-01   1.012E-02  < 18440- 2|  18> [   0 -   0]
+        70 5.400E+01 9.509E-02  (   0)   6.232E-01   2.624E-01  < 18440- 2|  18> [   0 -   0]
+        70 5.700E+01 7.454E-02  (   0)   4.538E-01   1.383E-01  < 18440- 2|  18> [   0 -   0]
+  Running post-processing for Abdominal (tag 2-neck-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter2-neck-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter2-neck-5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 72.8 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.2
+    left_internal_iliac: 4.9
+    left_renal: 7.3
+    right_external_iliac: 18.2
+    right_internal_iliac: 4.9
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.78 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Coronary (iteration 2-neck-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter2-neck-5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 72.8 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.2
+    left_internal_iliac: 4.9
+    left_renal: 7.3
+    right_external_iliac: 18.2
+    right_internal_iliac: 4.9
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.78 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Coronary (iteration 2-neck-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Coronary
+        59 5.700E+01 4.408E-03  (  -2)   2.960E-02   3.413E-03  < 69168- 3|  16> [   0 -   0]
+        59 6.100E+01 2.717E-03  (  -4)   3.861E-02   2.554E-02  <108128- 3|  16> [   0 -   0]
+        60 6.500E+01 5.984E-03  (  -1)   4.499E-02   3.340E-03  < 69168- 3|  16> [   0 -   0]
+  Running post-processing for Coronary (tag 2-neck-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter2-neck-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Coronary
+        59 5.700E+01 4.408E-03  (  -2)   2.960E-02   3.413E-03  < 69168- 3|  16> [   0 -   0]
+        59 6.100E+01 2.717E-03  (  -4)   3.861E-02   2.554E-02  <108128- 3|  16> [   0 -   0]
+        60 6.500E+01 5.984E-03  (  -1)   4.499E-02   3.340E-03  < 69168- 3|  16> [   0 -   0]
+  Running post-processing for Coronary (tag 2-neck-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter2-neck-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter2-neck-5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.8 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.6
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 2-neck-5 RESULTS ---
+Aorta: 86.0 -> 95.9 mL/s
+Abdominal: 67.2 -> 72.8 mL/s
+Coronary: 28.8 -> 29.8 mL/s
+Overall Efficiency: 0.951
+
+=== SIMULATION ITERATION 2-torso+5 ===
+Posture: Neck:+10° Torso:+20° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 86.63 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.020) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.020
+  Running solver for Aorta (iteration 2-torso+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter2-neck-5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.8 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.6
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 2-neck-5 RESULTS ---
+Aorta: 86.0 -> 95.9 mL/s
+Abdominal: 67.2 -> 72.8 mL/s
+Coronary: 28.8 -> 29.8 mL/s
+Overall Efficiency: 0.951
+
+=== SIMULATION ITERATION 2-torso+5 ===
+Posture: Neck:+10° Torso:+20° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 86.63 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.020) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.020
+  Running solver for Aorta (iteration 2-torso+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Aorta
+        79 3.500E+01 1.089E-02  (  -7)   3.383E-03   1.135E-02  < 64236- 1|  17> [   0 -   0]
+        80 3.700E+01 5.672E-02  (   0)   2.101E-02   1.009E-03  < 64236- 1|  18> [   0 -   0]
+        80 3.900E+01 1.089E-02  (  -7)   3.713E-03   1.303E-02  < 64236- 1|  18> [   0 -   0]
+  Running post-processing for Aorta (tag 2-torso+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter2-torso+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Aorta
+        79 3.500E+01 1.089E-02  (  -7)   3.383E-03   1.135E-02  < 64236- 1|  17> [   0 -   0]
+        80 3.700E+01 5.672E-02  (   0)   2.101E-02   1.009E-03  < 64236- 1|  18> [   0 -   0]
+        80 3.900E+01 1.089E-02  (  -7)   3.713E-03   1.303E-02  < 64236- 1|  18> [   0 -   0]
+  Running post-processing for Aorta (tag 2-torso+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter2-torso+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter2-torso+5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 96.6 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.6
+    carotid: 5.8
+    outflow: 67.7
+    rt_carotid: 5.8
+    subclavian: 5.8
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.65 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Abdominal (iteration 2-torso+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter2-torso+5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 96.6 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.6
+    carotid: 5.8
+    outflow: 67.7
+    rt_carotid: 5.8
+    subclavian: 5.8
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.65 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Abdominal (iteration 2-torso+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Abdominal
+        79 4.900E+01 2.595E-02  (  -4)   5.040E-02   2.989E-02  < 18440- 2|  18> [   0 -   0]
+        80 5.200E+01 8.135E-02  (   0)   1.788E-01   1.006E-02  < 18440- 2|  18> [   0 -   0]
+        80 5.400E+01 2.288E-02  (  -5)   2.094E-02   2.094E-02  < 18440- 2|  18> [   0 -   0]
+  Running post-processing for Abdominal (tag 2-torso+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter2-torso+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Abdominal
+        79 4.900E+01 2.595E-02  (  -4)   5.040E-02   2.989E-02  < 18440- 2|  18> [   0 -   0]
+        80 5.200E+01 8.135E-02  (   0)   1.788E-01   1.006E-02  < 18440- 2|  18> [   0 -   0]
+        80 5.400E+01 2.288E-02  (  -5)   2.094E-02   2.094E-02  < 18440- 2|  18> [   0 -   0]
+  Running post-processing for Abdominal (tag 2-torso+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter2-torso+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter2-torso+5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 73.3 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.3
+    left_internal_iliac: 4.9
+    left_renal: 7.3
+    right_external_iliac: 18.3
+    right_internal_iliac: 4.9
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.99 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.040) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.040
+  Running solver for Coronary (iteration 2-torso+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter2-torso+5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 73.3 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.3
+    left_internal_iliac: 4.9
+    left_renal: 7.3
+    right_external_iliac: 18.3
+    right_internal_iliac: 4.9
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.99 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.040) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.040
+  Running solver for Coronary (iteration 2-torso+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Coronary
+        69 6.000E+01 3.692E-03  (  -1)   2.385E-02   2.755E-03  < 69168- 3|  16> [   0 -   0]
+        69 6.500E+01 2.328E-03  (  -3)   1.430E-02   2.329E-03  < 48121- 3|  16> [   0 -   0]
+        70 7.000E+01 4.609E-03  (   0)   2.452E-02   2.886E-03  <107312- 3|  15> [   0 -   0]
+  Running post-processing for Coronary (tag 2-torso+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter2-torso+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Coronary
+        69 6.000E+01 3.692E-03  (  -1)   2.385E-02   2.755E-03  < 69168- 3|  16> [   0 -   0]
+        69 6.500E+01 2.328E-03  (  -3)   1.430E-02   2.329E-03  < 48121- 3|  16> [   0 -   0]
+        70 7.000E+01 4.609E-03  (   0)   2.452E-02   2.886E-03  <107312- 3|  15> [   0 -   0]
+  Running post-processing for Coronary (tag 2-torso+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter2-torso+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter2-torso+5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 30.0 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.7
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 2-torso+5 RESULTS ---
+Aorta: 86.6 -> 96.6 mL/s
+Abdominal: 67.6 -> 73.3 mL/s
+Coronary: 29.0 -> 30.0 mL/s
+Overall Efficiency: 0.957
+
+=== SIMULATION ITERATION 2-torso-5 ===
+Posture: Neck:+10° Torso:+10° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 84.97 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.015) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.015
+  Running solver for Aorta (iteration 2-torso-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter2-torso+5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 30.0 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.7
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 2-torso+5 RESULTS ---
+Aorta: 86.6 -> 96.6 mL/s
+Abdominal: 67.6 -> 73.3 mL/s
+Coronary: 29.0 -> 30.0 mL/s
+Overall Efficiency: 0.957
+
+=== SIMULATION ITERATION 2-torso-5 ===
+Posture: Neck:+10° Torso:+10° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 84.97 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.015) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.015
+  Running solver for Aorta (iteration 2-torso-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Aorta
+        89 4.300E+01 1.069E-02  (  -7)   2.311E-03   8.935E-03  < 64855- 1|  18> [   0 -   0]
+        90 4.500E+01 5.535E-02  (   0)   1.883E-02   9.214E-04  < 64211- 1|  18> [   0 -   0]
+        90 4.800E+01 1.073E-02  (  -7)   2.424E-03   9.343E-03  < 64239- 1|  18> [   0 -   0]
+  Running post-processing for Aorta (tag 2-torso-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter2-torso-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Aorta
+        89 4.300E+01 1.069E-02  (  -7)   2.311E-03   8.935E-03  < 64855- 1|  18> [   0 -   0]
+        90 4.500E+01 5.535E-02  (   0)   1.883E-02   9.214E-04  < 64211- 1|  18> [   0 -   0]
+        90 4.800E+01 1.073E-02  (  -7)   2.424E-03   9.343E-03  < 64239- 1|  18> [   0 -   0]
+  Running post-processing for Aorta (tag 2-torso-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter2-torso-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter2-torso-5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 94.8 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.4
+    carotid: 5.7
+    outflow: 66.3
+    rt_carotid: 5.7
+    subclavian: 5.7
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 66.35 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.020) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.020
+  Running solver for Abdominal (iteration 2-torso-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter2-torso-5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 94.8 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.4
+    carotid: 5.7
+    outflow: 66.3
+    rt_carotid: 5.7
+    subclavian: 5.7
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 66.35 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.020) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.020
+  Running solver for Abdominal (iteration 2-torso-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Abdominal
+        89 5.800E+01 1.710E-02  (  -6)   2.424E-02   3.367E-02  < 18440- 2|  17> [   0 -   0]
+        90 6.100E+01 6.113E-02  (  -1)   7.835E-02   3.942E-03  < 18440- 2|  17> [   0 -   0]
+        90 6.400E+01 1.712E-02  (  -6)   2.188E-02   3.352E-02  < 27848- 2|  17> [   0 -   0]
+  Running post-processing for Abdominal (tag 2-torso-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter2-torso-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Abdominal
+        89 5.800E+01 1.710E-02  (  -6)   2.424E-02   3.367E-02  < 18440- 2|  17> [   0 -   0]
+        90 6.100E+01 6.113E-02  (  -1)   7.835E-02   3.942E-03  < 18440- 2|  17> [   0 -   0]
+        90 6.400E+01 1.712E-02  (  -6)   2.188E-02   3.352E-02  < 27848- 2|  17> [   0 -   0]
+  Running post-processing for Abdominal (tag 2-torso-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter2-torso-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter2-torso-5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 71.9 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.2
+    hepatic: 2.4
+    left_external_iliac: 18.0
+    left_internal_iliac: 4.8
+    left_renal: 7.2
+    right_external_iliac: 18.0
+    right_internal_iliac: 4.8
+    right_renal: 7.2
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.43 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.020) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.020
+  Running solver for Coronary (iteration 2-torso-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter2-torso-5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 71.9 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.2
+    hepatic: 2.4
+    left_external_iliac: 18.0
+    left_internal_iliac: 4.8
+    left_renal: 7.2
+    right_external_iliac: 18.0
+    right_internal_iliac: 4.8
+    right_renal: 7.2
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.43 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.020) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.020
+  Running solver for Coronary (iteration 2-torso-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Coronary
+        79 1.490E+02 3.218E-03  (  -1)   1.755E-02   2.736E-03  < 90318- 4|  16> [   0 -   0]
+        79 1.620E+02 2.128E-03  (  -3)   1.873E-02   2.237E-02  < 90318- 4|  16> [   0 -   0]
+        80 1.740E+02 4.192E-03  (   0)   2.741E-02   2.736E-03  < 90318- 4|  15> [   0 -   0]
+  Running post-processing for Coronary (tag 2-torso-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter2-torso-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Coronary
+        79 1.490E+02 3.218E-03  (  -1)   1.755E-02   2.736E-03  < 90318- 4|  16> [   0 -   0]
+        79 1.620E+02 2.128E-03  (  -3)   1.873E-02   2.237E-02  < 90318- 4|  16> [   0 -   0]
+        80 1.740E+02 4.192E-03  (   0)   2.741E-02   2.736E-03  < 90318- 4|  15> [   0 -   0]
+  Running post-processing for Coronary (tag 2-torso-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter2-torso-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter2-torso-5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.5 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.3
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 2-torso-5 RESULTS ---
+Aorta: 85.0 -> 94.8 mL/s
+Abdominal: 66.3 -> 71.9 mL/s
+Coronary: 28.4 -> 29.5 mL/s
+Overall Efficiency: 0.939
+
+=== SIMULATION ITERATION 2-legs+5 ===
+Posture: Neck:+10° Torso:+15° Legs:+10°
+
+1. AORTA SIMULATION
+  Updated inflow to 86.22 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.018) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.018
+  Running solver for Aorta (iteration 2-legs+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter2-torso-5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.5 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.3
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 2-torso-5 RESULTS ---
+Aorta: 85.0 -> 94.8 mL/s
+Abdominal: 66.3 -> 71.9 mL/s
+Coronary: 28.4 -> 29.5 mL/s
+Overall Efficiency: 0.939
+
+=== SIMULATION ITERATION 2-legs+5 ===
+Posture: Neck:+10° Torso:+15° Legs:+10°
+
+1. AORTA SIMULATION
+  Updated inflow to 86.22 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.018) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.018
+  Running solver for Aorta (iteration 2-legs+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Aorta
+        99 7.400E+01 1.086E-02  (  -7)   1.952E-03   7.460E-03  < 12719- 1|  17> [   0 -   0]
+       100 8.000E+01 5.064E-02  (   0)   1.638E-02   8.528E-04  < 12112- 1|  17> [   0 -   0]
+       100 8.700E+01 1.076E-02  (  -7)   2.026E-03   7.681E-03  < 12112- 1|  17> [   0 -   0]
+  Running post-processing for Aorta (tag 2-legs+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter2-legs+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Aorta
+        99 7.400E+01 1.086E-02  (  -7)   1.952E-03   7.460E-03  < 12719- 1|  17> [   0 -   0]
+       100 8.000E+01 5.064E-02  (   0)   1.638E-02   8.528E-04  < 12112- 1|  17> [   0 -   0]
+       100 8.700E+01 1.076E-02  (  -7)   2.026E-03   7.681E-03  < 12112- 1|  17> [   0 -   0]
+  Running post-processing for Aorta (tag 2-legs+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter2-legs+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter2-legs+5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 96.2 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.5
+    carotid: 5.8
+    outflow: 67.3
+    rt_carotid: 5.8
+    subclavian: 5.8
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.32 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.035) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.035
+  Running solver for Abdominal (iteration 2-legs+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter2-legs+5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 96.2 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.5
+    carotid: 5.8
+    outflow: 67.3
+    rt_carotid: 5.8
+    subclavian: 5.8
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.32 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.035) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.035
+  Running solver for Abdominal (iteration 2-legs+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Abdominal
+        99 1.280E+02 1.764E-02  (  -5)   1.388E-02   1.970E-02  < 27848- 2|  17> [   0 -   0]
+       100 1.350E+02 4.871E-02  (   0)   4.231E-02   2.506E-03  < 27848- 2|  16> [   0 -   0]
+       100 1.440E+02 1.760E-02  (  -5)   1.292E-02   1.952E-02  < 27848- 2|  17> [   0 -   0]
+  Running post-processing for Abdominal (tag 2-legs+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter2-legs+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Abdominal
+        99 1.280E+02 1.764E-02  (  -5)   1.388E-02   1.970E-02  < 27848- 2|  17> [   0 -   0]
+       100 1.350E+02 4.871E-02  (   0)   4.231E-02   2.506E-03  < 27848- 2|  16> [   0 -   0]
+       100 1.440E+02 1.760E-02  (  -5)   1.292E-02   1.952E-02  < 27848- 2|  17> [   0 -   0]
+  Running post-processing for Abdominal (tag 2-legs+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter2-legs+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter2-legs+5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 72.9 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.2
+    left_internal_iliac: 4.9
+    left_renal: 7.3
+    right_external_iliac: 18.2
+    right_internal_iliac: 4.9
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.85 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Coronary (iteration 2-legs+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter2-legs+5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 72.9 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.2
+    left_internal_iliac: 4.9
+    left_renal: 7.3
+    right_external_iliac: 18.2
+    right_internal_iliac: 4.9
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.85 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Coronary (iteration 2-legs+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Coronary
+        89 8.600E+01 3.326E-03  (  -1)   1.686E-02   2.572E-03  < 90311- 4|  16> [   0 -   0]
+        89 9.000E+01 2.195E-03  (  -2)   1.173E-02   2.258E-03  < 90311- 4|  16> [   0 -   0]
+        90 9.300E+01 4.343E-03  (   0)   2.196E-02   2.747E-03  < 90311- 4|  16> [   0 -   0]
+  Running post-processing for Coronary (tag 2-legs+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter2-legs+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Coronary
+        89 8.600E+01 3.326E-03  (  -1)   1.686E-02   2.572E-03  < 90311- 4|  16> [   0 -   0]
+        89 9.000E+01 2.195E-03  (  -2)   1.173E-02   2.258E-03  < 90311- 4|  16> [   0 -   0]
+        90 9.300E+01 4.343E-03  (   0)   2.196E-02   2.747E-03  < 90311- 4|  16> [   0 -   0]
+  Running post-processing for Coronary (tag 2-legs+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter2-legs+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter2-legs+5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.9 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.6
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 2-legs+5 RESULTS ---
+Aorta: 86.2 -> 96.2 mL/s
+Abdominal: 67.3 -> 72.9 mL/s
+Coronary: 28.9 -> 29.9 mL/s
+Overall Efficiency: 0.953
+
+=== SIMULATION ITERATION 2-legs-5 ===
+Posture: Neck:+10° Torso:+15° Legs:+0°
+
+1. AORTA SIMULATION
+  Updated inflow to 85.38 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.018) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.018
+  Running solver for Aorta (iteration 2-legs-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter2-legs+5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.9 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.6
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 2-legs+5 RESULTS ---
+Aorta: 86.2 -> 96.2 mL/s
+Abdominal: 67.3 -> 72.9 mL/s
+Coronary: 28.9 -> 29.9 mL/s
+Overall Efficiency: 0.953
+
+=== SIMULATION ITERATION 2-legs-5 ===
+Posture: Neck:+10° Torso:+15° Legs:+0°
+
+1. AORTA SIMULATION
+  Updated inflow to 85.38 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.018) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.018
+  Running solver for Aorta (iteration 2-legs-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Aorta
+       109 3.200E+01 1.084E-02  (  -6)   1.670E-03   5.943E-03  <  4549- 1|  16> [   0 -   0]
+       110 3.300E+01 4.590E-02  (   0)   1.443E-02   7.819E-04  <  4502- 1|  16> [   0 -   0]
+       110 3.500E+01 1.075E-02  (  -6)   1.803E-03   6.389E-03  <  4549- 1|  15> [   0 -   0]
+  Running post-processing for Aorta (tag 2-legs-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter2-legs-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Aorta
+       109 3.200E+01 1.084E-02  (  -6)   1.670E-03   5.943E-03  <  4549- 1|  16> [   0 -   0]
+       110 3.300E+01 4.590E-02  (   0)   1.443E-02   7.819E-04  <  4502- 1|  16> [   0 -   0]
+       110 3.500E+01 1.075E-02  (  -6)   1.803E-03   6.389E-03  <  4549- 1|  15> [   0 -   0]
+  Running post-processing for Aorta (tag 2-legs-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter2-legs-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter2-legs-5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 95.2 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.4
+    carotid: 5.7
+    outflow: 66.7
+    rt_carotid: 5.7
+    subclavian: 5.7
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 66.67 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.015) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.015
+  Running solver for Abdominal (iteration 2-legs-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter2-legs-5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 95.2 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.4
+    carotid: 5.7
+    outflow: 66.7
+    rt_carotid: 5.7
+    subclavian: 5.7
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 66.67 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.015) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.015
+  Running solver for Abdominal (iteration 2-legs-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Abdominal
+       109 4.500E+01 1.683E-02  (  -4)   5.737E-03   1.327E-02  < 30590- 2|  17> [   0 -   0]
+       110 4.700E+01 4.610E-02  (   0)   2.929E-02   2.029E-03  < 30590- 2|  16> [   0 -   0]
+       110 5.000E+01 1.677E-02  (  -4)   5.318E-03   1.462E-02  < 30590- 2|  17> [   0 -   0]
+  Running post-processing for Abdominal (tag 2-legs-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter2-legs-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Abdominal
+       109 4.500E+01 1.683E-02  (  -4)   5.737E-03   1.327E-02  < 30590- 2|  17> [   0 -   0]
+       110 4.700E+01 4.610E-02  (   0)   2.929E-02   2.029E-03  < 30590- 2|  16> [   0 -   0]
+       110 5.000E+01 1.677E-02  (  -4)   5.318E-03   1.462E-02  < 30590- 2|  17> [   0 -   0]
+  Running post-processing for Abdominal (tag 2-legs-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter2-legs-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter2-legs-5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 72.3 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.2
+    hepatic: 2.4
+    left_external_iliac: 18.1
+    left_internal_iliac: 4.8
+    left_renal: 7.2
+    right_external_iliac: 18.1
+    right_internal_iliac: 4.8
+    right_renal: 7.2
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.57 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Coronary (iteration 2-legs-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter2-legs-5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 72.3 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.2
+    hepatic: 2.4
+    left_external_iliac: 18.1
+    left_internal_iliac: 4.8
+    left_renal: 7.2
+    right_external_iliac: 18.1
+    right_internal_iliac: 4.8
+    right_renal: 7.2
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.57 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Coronary (iteration 2-legs-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Coronary
+        99 5.100E+01 3.855E-03  (   0)   2.074E-02   2.379E-03  < 90311- 4|  16> [   0 -   0]
+        99 5.400E+01 2.344E-03  (  -1)   1.122E-02   1.976E-03  <107382- 3|  17> [   0 -   0]
+       100 5.800E+01 4.993E-03  (   1)   2.684E-02   2.591E-03  < 90311- 4|  16> [   0 -   0]
+  Running post-processing for Coronary (tag 2-legs-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter2-legs-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Coronary
+        99 5.100E+01 3.855E-03  (   0)   2.074E-02   2.379E-03  < 90311- 4|  16> [   0 -   0]
+        99 5.400E+01 2.344E-03  (  -1)   1.122E-02   1.976E-03  <107382- 3|  17> [   0 -   0]
+       100 5.800E+01 4.993E-03  (   1)   2.684E-02   2.591E-03  < 90311- 4|  16> [   0 -   0]
+  Running post-processing for Coronary (tag 2-legs-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter2-legs-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter2-legs-5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.6 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.4
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 2-legs-5 RESULTS ---
+Aorta: 85.4 -> 95.2 mL/s
+Abdominal: 66.7 -> 72.3 mL/s
+Coronary: 28.6 -> 29.6 mL/s
+Overall Efficiency: 0.944
+
+>>> BEST AFTER ITERATION 2: Neck:+10° Torso:+20° Legs:+5° (adjusted 0.957)
+
+--- Exploring posture adjustments (iteration 3) ---
+
+=== SIMULATION ITERATION 3-neck+5 ===
+Posture: Neck:+15° Torso:+20° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 86.42 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.025) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.025
+  Running solver for Aorta (iteration 3-neck+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter2-legs-5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.6 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.4
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 2-legs-5 RESULTS ---
+Aorta: 85.4 -> 95.2 mL/s
+Abdominal: 66.7 -> 72.3 mL/s
+Coronary: 28.6 -> 29.6 mL/s
+Overall Efficiency: 0.944
+
+>>> BEST AFTER ITERATION 2: Neck:+10° Torso:+20° Legs:+5° (adjusted 0.957)
+
+--- Exploring posture adjustments (iteration 3) ---
+
+=== SIMULATION ITERATION 3-neck+5 ===
+Posture: Neck:+15° Torso:+20° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 86.42 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.025) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.025
+  Running solver for Aorta (iteration 3-neck+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Aorta
+       119 3.300E+01 1.017E-02  (  -6)   1.544E-03   5.836E-03  <  6199- 1|  15> [   0 -   0]
+       120 3.500E+01 3.920E-02  (   0)   1.342E-02   7.002E-04  <  2189- 1|  15> [   0 -   0]
+       120 3.700E+01 1.003E-02  (  -6)   1.613E-03   6.064E-03  <  6199- 1|  15> [   0 -   0]
+  Running post-processing for Aorta (tag 3-neck+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter3-neck+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Aorta
+       119 3.300E+01 1.017E-02  (  -6)   1.544E-03   5.836E-03  <  6199- 1|  15> [   0 -   0]
+       120 3.500E+01 3.920E-02  (   0)   1.342E-02   7.002E-04  <  2189- 1|  15> [   0 -   0]
+       120 3.700E+01 1.003E-02  (  -6)   1.613E-03   6.064E-03  <  6199- 1|  15> [   0 -   0]
+  Running post-processing for Aorta (tag 3-neck+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter3-neck+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter3-neck+5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 96.4 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.6
+    carotid: 5.8
+    outflow: 67.5
+    rt_carotid: 5.8
+    subclavian: 5.8
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.48 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Abdominal (iteration 3-neck+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter3-neck+5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 96.4 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.6
+    carotid: 5.8
+    outflow: 67.5
+    rt_carotid: 5.8
+    subclavian: 5.8
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.48 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Abdominal (iteration 3-neck+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Abdominal
+       119 4.500E+01 1.622E-02  (  -4)   4.513E-03   2.303E-02  < 30590- 2|  17> [   0 -   0]
+       120 4.700E+01 4.255E-02  (   0)   2.266E-02   1.785E-03  < 14829- 2|  17> [   0 -   0]
+       120 5.000E+01 1.606E-02  (  -4)   4.263E-03   2.363E-02  < 14829- 2|  17> [   0 -   0]
+  Running post-processing for Abdominal (tag 3-neck+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter3-neck+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Abdominal
+       119 4.500E+01 1.622E-02  (  -4)   4.513E-03   2.303E-02  < 30590- 2|  17> [   0 -   0]
+       120 4.700E+01 4.255E-02  (   0)   2.266E-02   1.785E-03  < 14829- 2|  17> [   0 -   0]
+       120 5.000E+01 1.606E-02  (  -4)   4.263E-03   2.363E-02  < 14829- 2|  17> [   0 -   0]
+  Running post-processing for Abdominal (tag 3-neck+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter3-neck+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter3-neck+5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 73.1 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.3
+    left_internal_iliac: 4.9
+    left_renal: 7.3
+    right_external_iliac: 18.3
+    right_internal_iliac: 4.9
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.92 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.040) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.040
+  Running solver for Coronary (iteration 3-neck+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter3-neck+5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 73.1 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.3
+    left_internal_iliac: 4.9
+    left_renal: 7.3
+    right_external_iliac: 18.3
+    right_internal_iliac: 4.9
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.92 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.040) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.040
+  Running solver for Coronary (iteration 3-neck+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Coronary
+       109 5.100E+01 4.312E-03  (   0)   2.157E-02   2.311E-03  < 92113- 4|  15> [   0 -   0]
+       109 5.400E+01 2.415E-03  (  -2)   9.812E-03   1.763E-03  <112318- 3|  16> [   0 -   0]
+       110 5.800E+01 5.483E-03  (   1)   2.724E-02   2.527E-03  < 92114- 4|  15> [   0 -   0]
+  Running post-processing for Coronary (tag 3-neck+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter3-neck+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Coronary
+       109 5.100E+01 4.312E-03  (   0)   2.157E-02   2.311E-03  < 92113- 4|  15> [   0 -   0]
+       109 5.400E+01 2.415E-03  (  -2)   9.812E-03   1.763E-03  <112318- 3|  16> [   0 -   0]
+       110 5.800E+01 5.483E-03  (   1)   2.724E-02   2.527E-03  < 92114- 4|  15> [   0 -   0]
+  Running post-processing for Coronary (tag 3-neck+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter3-neck+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter3-neck+5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.9 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.7
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 3-neck+5 RESULTS ---
+Aorta: 86.4 -> 96.4 mL/s
+Abdominal: 67.5 -> 73.1 mL/s
+Coronary: 28.9 -> 29.9 mL/s
+Overall Efficiency: 0.955
+
+=== SIMULATION ITERATION 3-neck-5 ===
+Posture: Neck:+5° Torso:+20° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 86.84 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.015) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.015
+  Running solver for Aorta (iteration 3-neck-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter3-neck+5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.9 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.7
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 3-neck+5 RESULTS ---
+Aorta: 86.4 -> 96.4 mL/s
+Abdominal: 67.5 -> 73.1 mL/s
+Coronary: 28.9 -> 29.9 mL/s
+Overall Efficiency: 0.955
+
+=== SIMULATION ITERATION 3-neck-5 ===
+Posture: Neck:+5° Torso:+20° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 86.84 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.015) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.015
+  Running solver for Aorta (iteration 3-neck-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Aorta
+       129 3.300E+01 2.884E-02  (  -1)   4.683E-02   9.026E-03  <   622- 4|  14> [   0 -   0]
+       130 3.400E+01 6.730E-02  (   2)   4.180E-02   2.831E-03  <   622- 4|  14> [   0 -   0]
+       130 3.600E+01 2.189E-02  (  -2)   3.256E-02   5.123E-03  < 35622- 4|  14> [   0 -   0]
+  Running post-processing for Aorta (tag 3-neck-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter3-neck-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Aorta
+       129 3.300E+01 2.884E-02  (  -1)   4.683E-02   9.026E-03  <   622- 4|  14> [   0 -   0]
+       130 3.400E+01 6.730E-02  (   2)   4.180E-02   2.831E-03  <   622- 4|  14> [   0 -   0]
+       130 3.600E+01 2.189E-02  (  -2)   3.256E-02   5.123E-03  < 35622- 4|  14> [   0 -   0]
+  Running post-processing for Aorta (tag 3-neck-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter3-neck-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter3-neck-5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 96.9 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.6
+    carotid: 5.8
+    outflow: 67.8
+    rt_carotid: 5.8
+    subclavian: 5.8
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.81 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Abdominal (iteration 3-neck-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter3-neck-5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 96.9 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.6
+    carotid: 5.8
+    outflow: 67.8
+    rt_carotid: 5.8
+    subclavian: 5.8
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.81 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Abdominal (iteration 3-neck-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Abdominal
+       129 4.600E+01 3.972E-02  (   0)   1.178E-02   1.667E-02  < 14829- 2|  17> [   0 -   0]
+       130 4.900E+01 4.341E-02  (   0)   2.794E-02   1.827E-02  < 22345- 6|  17> [   0 -   0]
+       130 5.100E+01 4.182E-02  (   0)   1.150E-02   1.590E-02  < 22345- 6|  17> [   0 -   0]
+  Running post-processing for Abdominal (tag 3-neck-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter3-neck-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Abdominal
+       129 4.600E+01 3.972E-02  (   0)   1.178E-02   1.667E-02  < 14829- 2|  17> [   0 -   0]
+       130 4.900E+01 4.341E-02  (   0)   2.794E-02   1.827E-02  < 22345- 6|  17> [   0 -   0]
+       130 5.100E+01 4.182E-02  (   0)   1.150E-02   1.590E-02  < 22345- 6|  17> [   0 -   0]
+  Running post-processing for Abdominal (tag 3-neck-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter3-neck-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter3-neck-5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 73.4 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.4
+    left_internal_iliac: 4.9
+    left_renal: 7.3
+    right_external_iliac: 18.4
+    right_internal_iliac: 4.9
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 29.06 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.040) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.040
+  Running solver for Coronary (iteration 3-neck-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter3-neck-5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 73.4 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.4
+    left_internal_iliac: 4.9
+    left_renal: 7.3
+    right_external_iliac: 18.4
+    right_internal_iliac: 4.9
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 29.06 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.040) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.040
+  Running solver for Coronary (iteration 3-neck-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Coronary
+       119 5.100E+01 4.292E-03  (   0)   1.799E-02   2.349E-03  <102525- 4|  15> [   0 -   0]
+       119 5.500E+01 2.518E-03  (  -2)   7.938E-03   1.775E-02  <108225- 3|  16> [   0 -   0]
+       120 5.800E+01 6.247E-03  (   1)   2.971E-02   2.417E-03  < 92066- 4|  14> [   0 -   0]
+  Running post-processing for Coronary (tag 3-neck-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter3-neck-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Coronary
+       119 5.100E+01 4.292E-03  (   0)   1.799E-02   2.349E-03  <102525- 4|  15> [   0 -   0]
+       119 5.500E+01 2.518E-03  (  -2)   7.938E-03   1.775E-02  <108225- 3|  16> [   0 -   0]
+       120 5.800E+01 6.247E-03  (   1)   2.971E-02   2.417E-03  < 92066- 4|  14> [   0 -   0]
+  Running post-processing for Coronary (tag 3-neck-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter3-neck-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter3-neck-5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 30.0 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.8
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 3-neck-5 RESULTS ---
+Aorta: 86.8 -> 96.9 mL/s
+Abdominal: 67.8 -> 73.4 mL/s
+Coronary: 29.1 -> 30.0 mL/s
+Overall Efficiency: 0.959
+
+=== SIMULATION ITERATION 3-torso+5 ===
+Posture: Neck:+10° Torso:+25° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 87.47 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.022) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.022
+  Running solver for Aorta (iteration 3-torso+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter3-neck-5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 30.0 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.8
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 3-neck-5 RESULTS ---
+Aorta: 86.8 -> 96.9 mL/s
+Abdominal: 67.8 -> 73.4 mL/s
+Coronary: 29.1 -> 30.0 mL/s
+Overall Efficiency: 0.959
+
+=== SIMULATION ITERATION 3-torso+5 ===
+Posture: Neck:+10° Torso:+25° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 87.47 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.022) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.022
+  Running solver for Aorta (iteration 3-torso+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Aorta
+       139 3.200E+01 9.063E-03  (  -8)   7.579E-03   1.479E-02  < 43191- 2|  15> [   0 -   0]
+       140 3.400E+01 5.716E-02  (   0)   2.841E-02   8.052E-04  < 56615- 3|  14> [   0 -   0]
+       140 3.500E+01 8.523E-03  (  -9)   6.075E-03   1.701E-02  < 43191- 2|  14> [   0 -   0]
+  Running post-processing for Aorta (tag 3-torso+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter3-torso+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Aorta
+       139 3.200E+01 9.063E-03  (  -8)   7.579E-03   1.479E-02  < 43191- 2|  15> [   0 -   0]
+       140 3.400E+01 5.716E-02  (   0)   2.841E-02   8.052E-04  < 56615- 3|  14> [   0 -   0]
+       140 3.500E+01 8.523E-03  (  -9)   6.075E-03   1.701E-02  < 43191- 2|  14> [   0 -   0]
+  Running post-processing for Aorta (tag 3-torso+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter3-torso+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter3-torso+5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 97.6 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.7
+    carotid: 5.9
+    outflow: 68.3
+    rt_carotid: 5.9
+    subclavian: 5.9
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 68.30 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.035) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.035
+  Running solver for Abdominal (iteration 3-torso+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter3-torso+5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 97.6 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.7
+    carotid: 5.9
+    outflow: 68.3
+    rt_carotid: 5.9
+    subclavian: 5.9
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 68.30 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.035) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.035
+  Running solver for Abdominal (iteration 3-torso+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Abdominal
+       139 4.700E+01 4.181E-02  (   0)   1.288E-02   1.221E-02  < 22345- 6|  17> [   0 -   0]
+       140 5.000E+01 5.651E-02  (   1)   5.129E-02   3.735E-03  < 22345- 6|  17> [   0 -   0]
+       140 5.200E+01 3.983E-02  (   0)   1.041E-02   8.144E-03  < 22345- 6|  17> [   0 -   0]
+  Running post-processing for Abdominal (tag 3-torso+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter3-torso+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Abdominal
+       139 4.700E+01 4.181E-02  (   0)   1.288E-02   1.221E-02  < 22345- 6|  17> [   0 -   0]
+       140 5.000E+01 5.651E-02  (   1)   5.129E-02   3.735E-03  < 22345- 6|  17> [   0 -   0]
+       140 5.200E+01 3.983E-02  (   0)   1.041E-02   8.144E-03  < 22345- 6|  17> [   0 -   0]
+  Running post-processing for Abdominal (tag 3-torso+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter3-torso+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter3-torso+5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 73.9 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.4
+    hepatic: 2.5
+    left_external_iliac: 18.5
+    left_internal_iliac: 4.9
+    left_renal: 7.4
+    right_external_iliac: 18.5
+    right_internal_iliac: 4.9
+    right_renal: 7.4
+    splenic: 2.5
+
+3. CORONARY SIMULATION
+  Updated inflow to 29.27 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.050) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.050
+  Running solver for Coronary (iteration 3-torso+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter3-torso+5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 73.9 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.4
+    hepatic: 2.5
+    left_external_iliac: 18.5
+    left_internal_iliac: 4.9
+    left_renal: 7.4
+    right_external_iliac: 18.5
+    right_internal_iliac: 4.9
+    right_renal: 7.4
+    splenic: 2.5
+
+3. CORONARY SIMULATION
+  Updated inflow to 29.27 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.050) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.050
+  Running solver for Coronary (iteration 3-torso+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Coronary
+       129 5.000E+01 4.587E-03  (  -1)   1.715E-02   2.319E-03  < 90315- 4|  15> [   0 -   0]
+       129 5.400E+01 2.569E-03  (  -3)   9.060E-03   1.854E-03  <108440- 3|  15> [   0 -   0]
+       130 5.800E+01 6.272E-03  (   0)   2.463E-02   2.461E-03  < 92113- 4|  15> [   0 -   0]
+  Running post-processing for Coronary (tag 3-torso+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter3-torso+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Coronary
+       129 5.000E+01 4.587E-03  (  -1)   1.715E-02   2.319E-03  < 90315- 4|  15> [   0 -   0]
+       129 5.400E+01 2.569E-03  (  -3)   9.060E-03   1.854E-03  <108440- 3|  15> [   0 -   0]
+       130 5.800E+01 6.272E-03  (   0)   2.463E-02   2.461E-03  < 92113- 4|  15> [   0 -   0]
+  Running post-processing for Coronary (tag 3-torso+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter3-torso+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter3-torso+5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 30.2 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 28.0
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 3-torso+5 RESULTS ---
+Aorta: 87.5 -> 97.6 mL/s
+Abdominal: 68.3 -> 73.9 mL/s
+Coronary: 29.3 -> 30.2 mL/s
+Overall Efficiency: 0.966
+
+=== SIMULATION ITERATION 3-torso-5 ===
+Posture: Neck:+10° Torso:+15° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 85.80 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.018) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.018
+  Running solver for Aorta (iteration 3-torso-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter3-torso+5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 30.2 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 28.0
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 3-torso+5 RESULTS ---
+Aorta: 87.5 -> 97.6 mL/s
+Abdominal: 68.3 -> 73.9 mL/s
+Coronary: 29.3 -> 30.2 mL/s
+Overall Efficiency: 0.966
+
+=== SIMULATION ITERATION 3-torso-5 ===
+Posture: Neck:+10° Torso:+15° Legs:+5°
+
+1. AORTA SIMULATION
+  Updated inflow to 85.80 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.018) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.018
+  Running solver for Aorta (iteration 3-torso-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Aorta
+       149 3.300E+01 1.025E-02  (  -7)   5.727E-03   1.289E-02  <   477- 1|  15> [   0 -   0]
+       150 3.500E+01 4.874E-02  (   0)   2.182E-02   6.668E-04  <   477- 1|  16> [   0 -   0]
+       150 3.700E+01 9.875E-03  (  -7)   4.903E-03   1.578E-02  <   477- 1|  16> [   0 -   0]
+  Running post-processing for Aorta (tag 3-torso-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter3-torso-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Aorta
+       149 3.300E+01 1.025E-02  (  -7)   5.727E-03   1.289E-02  <   477- 1|  15> [   0 -   0]
+       150 3.500E+01 4.874E-02  (   0)   2.182E-02   6.668E-04  <   477- 1|  16> [   0 -   0]
+       150 3.700E+01 9.875E-03  (  -7)   4.903E-03   1.578E-02  <   477- 1|  16> [   0 -   0]
+  Running post-processing for Aorta (tag 3-torso-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter3-torso-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter3-torso-5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 95.7 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.5
+    carotid: 5.7
+    outflow: 67.0
+    rt_carotid: 5.7
+    subclavian: 5.7
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.00 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.025) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.025
+  Running solver for Abdominal (iteration 3-torso-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter3-torso-5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 95.7 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.5
+    carotid: 5.7
+    outflow: 67.0
+    rt_carotid: 5.7
+    subclavian: 5.7
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.00 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.025) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.025
+  Running solver for Abdominal (iteration 3-torso-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Abdominal
+       149 4.700E+01 1.662E-02  (  -5)   6.081E-03   1.223E-02  < 22345- 6|  17> [   0 -   0]
+       150 5.000E+01 5.819E-02  (   0)   2.711E-02   1.325E-03  < 22345- 6|  17> [   0 -   0]
+       150 5.200E+01 1.619E-02  (  -5)   5.573E-03   1.199E-02  < 22345- 6|  18> [   0 -   0]
+  Running post-processing for Abdominal (tag 3-torso-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter3-torso-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Abdominal
+       149 4.700E+01 1.662E-02  (  -5)   6.081E-03   1.223E-02  < 22345- 6|  17> [   0 -   0]
+       150 5.000E+01 5.819E-02  (   0)   2.711E-02   1.325E-03  < 22345- 6|  17> [   0 -   0]
+       150 5.200E+01 1.619E-02  (  -5)   5.573E-03   1.199E-02  < 22345- 6|  18> [   0 -   0]
+  Running post-processing for Abdominal (tag 3-torso-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter3-torso-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter3-torso-5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 72.6 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.2
+    left_internal_iliac: 4.8
+    left_renal: 7.3
+    right_external_iliac: 18.2
+    right_internal_iliac: 4.8
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.71 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Coronary (iteration 3-torso-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter3-torso-5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 72.6 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.2
+    left_internal_iliac: 4.8
+    left_renal: 7.3
+    right_external_iliac: 18.2
+    right_internal_iliac: 4.8
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.71 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.030) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.030
+  Running solver for Coronary (iteration 3-torso-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Coronary
+       139 5.000E+01 4.572E-03  (   0)   1.459E-02   2.345E-03  < 93508- 4|  16> [   0 -   0]
+       139 5.300E+01 2.570E-03  (  -3)   7.637E-03   1.897E-03  < 93508- 4|  16> [   0 -   0]
+       140 5.700E+01 6.282E-03  (   0)   2.132E-02   2.504E-03  < 93508- 4|  16> [   0 -   0]
+  Running post-processing for Coronary (tag 3-torso-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter3-torso-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Coronary
+       139 5.000E+01 4.572E-03  (   0)   1.459E-02   2.345E-03  < 93508- 4|  16> [   0 -   0]
+       139 5.300E+01 2.570E-03  (  -3)   7.637E-03   1.897E-03  < 93508- 4|  16> [   0 -   0]
+       140 5.700E+01 6.282E-03  (   0)   2.132E-02   2.504E-03  < 93508- 4|  16> [   0 -   0]
+  Running post-processing for Coronary (tag 3-torso-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter3-torso-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter3-torso-5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.7 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.5
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 3-torso-5 RESULTS ---
+Aorta: 85.8 -> 95.7 mL/s
+Abdominal: 67.0 -> 72.6 mL/s
+Coronary: 28.7 -> 29.7 mL/s
+Overall Efficiency: 0.948
+
+=== SIMULATION ITERATION 3-legs+5 ===
+Posture: Neck:+10° Torso:+20° Legs:+10°
+
+1. AORTA SIMULATION
+  Updated inflow to 87.05 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.020) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.020
+  Running solver for Aorta (iteration 3-legs+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter3-torso-5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.7 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.5
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 3-torso-5 RESULTS ---
+Aorta: 85.8 -> 95.7 mL/s
+Abdominal: 67.0 -> 72.6 mL/s
+Coronary: 28.7 -> 29.7 mL/s
+Overall Efficiency: 0.948
+
+=== SIMULATION ITERATION 3-legs+5 ===
+Posture: Neck:+10° Torso:+20° Legs:+10°
+
+1. AORTA SIMULATION
+  Updated inflow to 87.05 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.020) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.020
+  Running solver for Aorta (iteration 3-legs+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Aorta
+       159 3.200E+01 9.528E-03  (  -7)   5.269E-03   1.443E-02  < 64339- 1|  15> [   0 -   0]
+       160 3.400E+01 4.474E-02  (   0)   1.923E-02   5.873E-04  < 64298- 1|  15> [   0 -   0]
+       160 3.600E+01 9.743E-03  (  -6)   4.706E-03   9.674E-03  < 64339- 1|  15> [   0 -   0]
+  Running post-processing for Aorta (tag 3-legs+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter3-legs+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Aorta
+       159 3.200E+01 9.528E-03  (  -7)   5.269E-03   1.443E-02  < 64339- 1|  15> [   0 -   0]
+       160 3.400E+01 4.474E-02  (   0)   1.923E-02   5.873E-04  < 64298- 1|  15> [   0 -   0]
+       160 3.600E+01 9.743E-03  (  -6)   4.706E-03   9.674E-03  < 64339- 1|  15> [   0 -   0]
+  Running post-processing for Aorta (tag 3-legs+5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter3-legs+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter3-legs+5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 97.1 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.7
+    carotid: 5.8
+    outflow: 68.0
+    rt_carotid: 5.8
+    subclavian: 5.8
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.97 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.040) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.040
+  Running solver for Abdominal (iteration 3-legs+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter3-legs+5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 97.1 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.7
+    carotid: 5.8
+    outflow: 68.0
+    rt_carotid: 5.8
+    subclavian: 5.8
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.97 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.040) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.040
+  Running solver for Abdominal (iteration 3-legs+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Abdominal
+       159 4.600E+01 1.476E-02  (  -5)   4.427E-03   1.020E-02  < 22345- 6|  18> [   0 -   0]
+       160 4.800E+01 4.953E-02  (   0)   1.759E-02   1.007E-03  < 22345- 6|  18> [   0 -   0]
+       160 5.000E+01 1.458E-02  (  -5)   4.294E-03   9.664E-03  < 22345- 6|  18> [   0 -   0]
+  Running post-processing for Abdominal (tag 3-legs+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter3-legs+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Abdominal
+       159 4.600E+01 1.476E-02  (  -5)   4.427E-03   1.020E-02  < 22345- 6|  18> [   0 -   0]
+       160 4.800E+01 4.953E-02  (   0)   1.759E-02   1.007E-03  < 22345- 6|  18> [   0 -   0]
+       160 5.000E+01 1.458E-02  (  -5)   4.294E-03   9.664E-03  < 22345- 6|  18> [   0 -   0]
+  Running post-processing for Abdominal (tag 3-legs+5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter3-legs+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter3-legs+5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 73.5 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.4
+    hepatic: 2.5
+    left_external_iliac: 18.4
+    left_internal_iliac: 4.9
+    left_renal: 7.4
+    right_external_iliac: 18.4
+    right_internal_iliac: 4.9
+    right_renal: 7.4
+    splenic: 2.5
+
+3. CORONARY SIMULATION
+  Updated inflow to 29.13 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.040) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.040
+  Running solver for Coronary (iteration 3-legs+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter3-legs+5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 73.5 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.4
+    hepatic: 2.5
+    left_external_iliac: 18.4
+    left_internal_iliac: 4.9
+    left_renal: 7.4
+    right_external_iliac: 18.4
+    right_internal_iliac: 4.9
+    right_renal: 7.4
+    splenic: 2.5
+
+3. CORONARY SIMULATION
+  Updated inflow to 29.13 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.040) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.040
+  Running solver for Coronary (iteration 3-legs+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Coronary
+       149 5.000E+01 4.522E-03  (   0)   1.228E-02   2.370E-03  < 93761- 4|  16> [   0 -   0]
+       149 5.400E+01 2.567E-03  (  -2)   6.793E-03   1.920E-03  <103239- 4|  16> [   0 -   0]
+       150 5.800E+01 6.092E-03  (   0)   1.792E-02   2.543E-03  <101072- 4|  16> [   0 -   0]
+  Running post-processing for Coronary (tag 3-legs+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter3-legs+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Coronary
+       149 5.000E+01 4.522E-03  (   0)   1.228E-02   2.370E-03  < 93761- 4|  16> [   0 -   0]
+       149 5.400E+01 2.567E-03  (  -2)   6.793E-03   1.920E-03  <103239- 4|  16> [   0 -   0]
+       150 5.800E+01 6.092E-03  (   0)   1.792E-02   2.543E-03  <101072- 4|  16> [   0 -   0]
+  Running post-processing for Coronary (tag 3-legs+5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter3-legs+5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter3-legs+5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 30.1 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.9
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 3-legs+5 RESULTS ---
+Aorta: 87.0 -> 97.1 mL/s
+Abdominal: 68.0 -> 73.5 mL/s
+Coronary: 29.1 -> 30.1 mL/s
+Overall Efficiency: 0.961
+
+=== SIMULATION ITERATION 3-legs-5 ===
+Posture: Neck:+10° Torso:+20° Legs:+0°
+
+1. AORTA SIMULATION
+  Updated inflow to 86.22 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.020) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.020
+  Running solver for Aorta (iteration 3-legs-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter3-legs+5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 30.1 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.9
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 3-legs+5 RESULTS ---
+Aorta: 87.0 -> 97.1 mL/s
+Abdominal: 68.0 -> 73.5 mL/s
+Coronary: 29.1 -> 30.1 mL/s
+Overall Efficiency: 0.961
+
+=== SIMULATION ITERATION 3-legs-5 ===
+Posture: Neck:+10° Torso:+20° Legs:+0°
+
+1. AORTA SIMULATION
+  Updated inflow to 86.22 mL/s (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.020) (D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.020
+  Running solver for Aorta (iteration 3-legs-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Aorta
+       169 3.200E+01 9.074E-03  (  -6)   5.171E-03   8.350E-03  < 64605- 1|  15> [   0 -   0]
+       170 3.400E+01 4.495E-02  (   0)   1.973E-02   5.158E-04  < 64605- 1|  15> [   0 -   0]
+       170 3.600E+01 8.678E-03  (  -7)   4.656E-03   1.080E-02  < 64605- 1|  15> [   0 -   0]
+  Running post-processing for Aorta (tag 3-legs-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter3-legs-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Aorta
+       169 3.200E+01 9.074E-03  (  -6)   5.171E-03   8.350E-03  < 64605- 1|  15> [   0 -   0]
+       170 3.400E+01 4.495E-02  (   0)   1.973E-02   5.158E-04  < 64605- 1|  15> [   0 -   0]
+       170 3.600E+01 8.678E-03  (  -7)   4.656E-03   1.080E-02  < 64605- 1|  15> [   0 -   0]
+  Running post-processing for Aorta (tag 3-legs-5)...
+    Working directory: D:\SimVascularProjects\0011_H_AO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0011_H_AO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Aorta_Iter3-legs-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter3-legs-5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 96.2 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.5
+    carotid: 5.8
+    outflow: 67.3
+    rt_carotid: 5.8
+    subclavian: 5.8
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.32 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.020) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.020
+  Running solver for Abdominal (iteration 3-legs-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Aorta_Iter3-legs-5
+    Create tets for 2989185 elements.
+    numArrays: 1
+    numPts: 79328
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (76867KB) -> Outflow: 96.2 mL/s
+  Estimated outlet split (mL/s):
+    btrunk: 11.5
+    carotid: 5.8
+    outflow: 67.3
+    rt_carotid: 5.8
+    subclavian: 5.8
+
+2. ABDOMINAL AORTA SIMULATION
+  Updated inflow to 67.32 mL/s (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.020) (D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.020
+  Running solver for Abdominal (iteration 3-legs-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Abdominal
+       169 4.500E+01 1.335E-02  (  -5)   2.527E-03   6.658E-03  < 22345- 6|  18> [   0 -   0]
+       170 4.700E+01 4.590E-02  (   0)   1.384E-02   8.614E-04  <  3811- 2|  17> [   0 -   0]
+       170 5.000E+01 1.322E-02  (  -5)   2.442E-03   7.014E-03  < 22345- 6|  18> [   0 -   0]
+  Running post-processing for Abdominal (tag 3-legs-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter3-legs-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Abdominal
+       169 4.500E+01 1.335E-02  (  -5)   2.527E-03   6.658E-03  < 22345- 6|  18> [   0 -   0]
+       170 4.700E+01 4.590E-02  (   0)   1.384E-02   8.614E-04  <  3811- 2|  17> [   0 -   0]
+       170 5.000E+01 1.322E-02  (  -5)   2.442E-03   7.014E-03  < 22345- 6|  18> [   0 -   0]
+  Running post-processing for Abdominal (tag 3-legs-5)...
+    Working directory: D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0029_H_ABAO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Abdominal_Iter3-legs-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter3-legs-5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 73.0 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.2
+    left_internal_iliac: 4.9
+    left_renal: 7.3
+    right_external_iliac: 18.2
+    right_internal_iliac: 4.9
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.85 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.040) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.040
+  Running solver for Coronary (iteration 3-legs-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Post-processing completed: D:\SimVascularProjects\Results\Abdominal_Iter3-legs-5
+    Create tets for 3573998 elements.
+    numArrays: 1
+    numPts: 116748
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (91896KB) -> Outflow: 73.0 mL/s
+  Estimated outlet split (mL/s):
+    SMA: 7.3
+    hepatic: 2.4
+    left_external_iliac: 18.2
+    left_internal_iliac: 4.9
+    left_renal: 7.3
+    right_external_iliac: 18.2
+    right_internal_iliac: 4.9
+    right_renal: 7.3
+    splenic: 2.4
+
+3. CORONARY SIMULATION
+  Updated inflow to 28.85 mL/s (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\inflow.flow)
+  Updated resistances (multiplier: 1.040) (D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\solver.inp)
+  Resistance multiplier applied: 1.040
+  Running solver for Coronary (iteration 3-legs-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\Microsoft MPI\Bin\mpiexec.exe" -n 8 "C:\Program Files\SimVascular\svSolver\2022-08-19\svsolver-msmpi-bin.exe" solver.inp
+  Simulation completed for Coronary
+       159 5.000E+01 8.049E-03  (   2)   2.030E-02   2.967E-03  < 97128- 1|  16> [   0 -   0]
+       159 5.300E+01 4.787E-03  (   0)   7.868E-03   9.246E-04  < 69438- 1|  17> [   0 -   0]
+       160 5.700E+01 6.294E-03  (   1)   1.893E-02   1.534E-03  < 91108- 4|  16> [   0 -   0]
+  Running post-processing for Coronary (tag 3-legs-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter3-legs-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Simulation completed for Coronary
+       159 5.000E+01 8.049E-03  (   2)   2.030E-02   2.967E-03  < 97128- 1|  16> [   0 -   0]
+       159 5.300E+01 4.787E-03  (   0)   7.868E-03   9.246E-04  < 69438- 1|  17> [   0 -   0]
+       160 5.700E+01 6.294E-03  (   1)   1.893E-02   1.534E-03  < 91108- 4|  16> [   0 -   0]
+  Running post-processing for Coronary (tag 3-legs-5)...
+    Working directory: D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project
+    Command: "C:\Program Files\SimVascular\svSolver\2022-08-19\svpost-bin.exe" -start 10 -stop 10 -incr 1 -indir D:\SimVascularProjects\0073_H_CORO_H\Simulations\Project\8-procs_case -outdir D:\SimVascularProjects\Results\Coronary_Iter3-legs-5 -all -vtu sim1 -vtp sim1 -sim_units_cm
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter3-legs-5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.8 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.6
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 3-legs-5 RESULTS ---
+Aorta: 86.2 -> 96.2 mL/s
+Abdominal: 67.3 -> 73.0 mL/s
+Coronary: 28.9 -> 29.8 mL/s
+Overall Efficiency: 0.953
+
+>>> BEST AFTER ITERATION 3: Neck:+10° Torso:+25° Legs:+5° (adjusted 0.966)
+
+============================================================
+POSTURE OPTIMIZATION REPORT
+============================================================
+Optimal Posture: Neck:+10° Torso:+25° Legs:+5°
+Adjusted Efficiency Score: 0.966
+Total Simulations: 13
+  Post-processing completed: D:\SimVascularProjects\Results\Coronary_Iter3-legs-5
+    Create tets for 5124970 elements.
+    numArrays: 1
+    numPts: 120626
+    found vinplane_traction and adding mean, pulse, osi.
+    found vWSS and adding mean, pulse, osi.
+    [stderr] WARNING: No data found for rinplane_traction at time step 10. rTAWSS, rshear_pulse and rOSI will not be calculated.
+    [stderr] WARNING: No data found for rWSS at time step 10. rTAWSS_wss, rshear_pulse_wss and rOSI_wss will not be calculated.
+    Generated files: average_result.vtp, sim1_00010.vtp, sim1_00010.vtu
+    File analysis: sim1_00010.vtu (126464KB) -> Outflow: 29.8 mL/s
+  Estimated outlet split (mL/s):
+    aorta_outlet: 27.6
+    lca_br1: 0.4
+    lca_br2: 0.3
+    lca_br3: 0.3
+    lca_br4: 0.2
+    lca_br5: 0.1
+    lca_br6: 0.1
+    rca_br1: 0.4
+    rca_br2: 0.2
+    rca_br3: 0.2
+
+--- ITERATION 3-legs-5 RESULTS ---
+Aorta: 86.2 -> 96.2 mL/s
+Abdominal: 67.3 -> 73.0 mL/s
+Coronary: 28.9 -> 29.8 mL/s
+Overall Efficiency: 0.953
+
+>>> BEST AFTER ITERATION 3: Neck:+10° Torso:+25° Legs:+5° (adjusted 0.966)
+
+============================================================
+POSTURE OPTIMIZATION REPORT
+============================================================
+Optimal Posture: Neck:+10° Torso:+25° Legs:+5°
+Adjusted Efficiency Score: 0.966
+Total Simulations: 13

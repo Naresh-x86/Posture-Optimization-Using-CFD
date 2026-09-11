@@ -1,2 +1,0 @@
-step	btrunk	carotid	inflow	outflow	rt_carotid	subclavian	
-00010	0.082009	-0.115231	-2416.816681	0.007916	-0.055595	0.165521	
